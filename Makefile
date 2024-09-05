@@ -9,7 +9,7 @@ epub: $(SOURCES) outputDirs
 					--metadata author="Jin Yong" \
 					--epub-cover-image=cover.jpeg \
 					--top-level-division=chapter \
-					-o output/HSDS.epub README.md $(SOURCES)
+					-o output/ROCH.epub README.md $(SOURCES)
            
 html:  $(SRCS) outputDirs
 	pandoc --embed-resources=true --standalone \
@@ -18,7 +18,7 @@ html:  $(SRCS) outputDirs
 					--css=./css/style.epub.css \
 					--top-level-division=chapter \
 					--metadata pagetitle="The Return of the Condor Heroes (神鵰俠侶) by Jin Yong" \
-					-o output/HSDS.html README.md $(SOURCES)
+					-o output/ROCH.html README.md $(SOURCES)
 
 clean:
 	rm -rf output
